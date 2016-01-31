@@ -67,8 +67,10 @@ valid_columns <- function(columns_to_extract, features) {
 
 # Using regex only extract the measurements on the mean and standard deviation
 features.extract <- valid_columns(features.valid, load.file(file.features))
+features.extract.literals <- as.character((read.table(file.features)[features.extract,])$V2)
 
-features.extract.literals <- load.file(file.features, features.extract)
+features.extract.literals <- c(features.extract.literals, c("activities.numeric", "activities.literals"))
+
 activities.labels <- load.file(file.activities.lables)
 
 ## Test
@@ -79,7 +81,7 @@ test.activities.literals <- mapvalues(test.activities[,1],
                                       to=as.character(activities.labels[,2]))
 test.features <- load.file(file.test.data, features.extract)
 test.data <- cbind(test.features, test.activities, test.activities.literals)
-
+names(test.data) <- features.extract.literals
 
 ## Train
 
@@ -89,6 +91,6 @@ train.activities.literals <- mapvalues(train.activities[,1],
                                           to=as.character(activities.labels[,2]))
 train.features <- load.file(file.train.data, features.extract)
 train.data <- cbind(train.features, train.activities, train.activities.literals)
-
+names(train.data) <- features.extract.literals
 # Merge the training and the test sets to create one data set
 all.data <- rbind(train.data, test.data)
