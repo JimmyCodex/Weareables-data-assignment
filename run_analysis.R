@@ -72,7 +72,7 @@ features.extract.literals <- as.character((read.table(file.features)[features.ex
 
 # Add col names for both the numerical and the literal activities columns
 # We are specifically adding a column for each of them
-features.extract.literals <- c(features.extract.literals, c("activities.numeric", "activities", "subject"))
+features.extract.literals <- c(features.extract.literals, c("activities", "subject"))
 
 activities.labels <- load.file(file.activities.lables)
 
@@ -86,7 +86,7 @@ test.features <- load.file(file.test.data, features.extract)
 
 test.subjects <- load.file(file.test.subjects)
 
-test.data <- cbind(test.features, test.activities, test.activities.literals, test.subjects)
+test.data <- cbind(test.features, test.activities.literals, test.subjects)
 names(test.data) <- features.extract.literals
 
 ## Train
@@ -99,7 +99,7 @@ train.features <- load.file(file.train.data, features.extract)
 
 train.subjects <- load.file(file.train.subjects)
 
-train.data <- cbind(train.features, train.activities, train.activities.literals, train.subjects)
+train.data <- cbind(train.features, train.activities.literals, train.subjects)
 names(train.data) <- features.extract.literals
 
 # Merge the training and the test sets to create one data set
