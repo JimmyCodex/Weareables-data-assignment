@@ -48,29 +48,30 @@ source run_analysis.R
 
 With debug.output set to true, the following output should be printed on the console:
 
-[1] "Loading columns to extract -mean\\(\\) -std\\(\\)"
-[1] "Loaded file ./data/features.txt"
-[1] "Reading all the columns"
-[1] "Total number of features 561"
-[1] "Found total features matching -mean\\(\\) -std\\(\\) 66"
-[1] "Loaded file ./data/activity_labels.txt"
-[1] "Reading all the columns"
-[1] "Loaded file ./data/test/y_test.txt"
-[1] "Reading all the columns"
-[1] "Loaded file ./data/test/X_test.txt"
-[1] "Reading only the given columns 1 2 3 4 5 6 41 42 43 44 45 46 81 82 83 84 85 86 121 122 123 124 125 126 161 162 163 164 165 166 201 202 214 215 227 228 240 241 253 254 266 267 268 269 270 271 345 346 347 348 349 350 424 425 426 427 428 429 503 504 516 517 529 530 542 543"
-[1] "Loaded file ./data/test/subject_test.txt"
-[1] "Reading all the columns"
-[1] "Loaded file ./data/train/y_train.txt"
-[1] "Reading all the columns"
-[1] "Loaded file ./data/train/X_train.txt"
-[1] "Reading only the given columns 1 2 3 4 5 6 41 42 43 44 45 46 81 82 83 84 85 86 121 122 123 124 125 126 161 162 163 164 165 166 201 202 214 215 227 228 240 241 253 254 266 267 268 269 270 271 345 346 347 348 349 350 424 425 426 427 428 429 503 504 516 517 529 530 542 543"
-[1] "Loaded file ./data/train/subject_train.txt"
-[1] "Reading all the columns"
-[1] "Melting data file 10299"
-[1] "Dcasting data file 10299"
-[1] "Writing cleaned data file to  ./data/cleaned.txt"
-
+```
+    [1] "Loading columns to extract -mean\\(\\) -std\\(\\)"
+    [1] "Loaded file ./data/features.txt"
+    [1] "Reading all the columns"
+    [1] "Total number of features 561"
+    [1] "Found total features matching -mean\\(\\) -std\\(\\) 66"
+    [1] "Loaded file ./data/activity_labels.txt"
+    [1] "Reading all the columns"
+    [1] "Loaded file ./data/test/y_test.txt"
+    [1] "Reading all the columns"
+    [1] "Loaded file ./data/test/X_test.txt"
+    [1] "Reading only the given columns 1 2 3 4 5 6 41 42 43 44 45 46 81 82 83 84 85 86 121 122 123 124 125 126 161 162 163 164 165 166 201 202 214 215 227 228 240 241 253 254 266 267 268 269 270 271 345 346 347 348 349 350 424 425 426 427 428 429 503 504 516 517 529 530 542 543"
+    [1] "Loaded file ./data/test/subject_test.txt"
+    [1] "Reading all the columns"
+    [1] "Loaded file ./data/train/y_train.txt"
+    [1] "Reading all the columns"
+    [1] "Loaded file ./data/train/X_train.txt"
+    [1] "Reading only the given columns 1 2 3 4 5 6 41 42 43 44 45 46 81 82 83 84 85 86 121 122 123 124 125 126 161 162 163 164 165 166 201 202 214 215 227 228 240 241 253 254 266 267 268 269 270 271 345 346 347 348 349 350 424 425 426 427 428 429 503 504 516 517 529 530 542 543"
+    [1] "Loaded file ./data/train/subject_train.txt"
+    [1] "Reading all the columns"
+    [1] "Melting data file 10299"
+    [1] "Dcasting data file 10299"
+    [1] "Writing cleaned data file to  ./data/cleaned.txt"
+```
 The script file expects the data from Samsung to be downloaded and unzipped in the data/ directory.
 
 ### Cleaned data
