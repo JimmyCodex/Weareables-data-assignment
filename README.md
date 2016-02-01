@@ -5,6 +5,7 @@
 The script is divided into two sections.
 
 Section 1 (lines 1 to 63):
+    
     This part of the script contains common functions and variable definitions
     which are needed as part of the analysis.
 
@@ -16,8 +17,11 @@ Section 1 (lines 1 to 63):
     Each function has explanatory comments above its definition.
 
 Section 2 (lines 64 to 117):
+    
     This part of the script contains the analysis part of the assignment.
+    
     The analysis consists of the following steps:
+```    
         1. Using regex we extract all the features which are mean or std.
         2. Using the row names matched by the regex checks we extract the features literal
         descriptions, which we will later use as column names.
@@ -38,7 +42,7 @@ Section 2 (lines 64 to 117):
         18. The merged data is melted.
         19. The merged melted data is dcasted.
         20. FInally the data is written to the cleaned.txt file.
-
+```
 
 It is important to mention that the script has a debug outut toggle variable: debug.print
 When this variable is set to true, the script will outbout useful debugging information to the console.
