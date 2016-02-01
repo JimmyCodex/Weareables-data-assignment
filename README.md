@@ -47,7 +47,7 @@ Section 2 (lines 64 to 117):
 It is important to mention that the script has a debug outut toggle variable: debug.print
 When this variable is set to true, the script will outbout useful debugging information to the console.
 
-## Run_analysisning the script
+## Running the script
 source run_analysis.R
 
 With debug.output set to true, the following output should be printed on the console:
