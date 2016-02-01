@@ -1,5 +1,13 @@
 ### CodeBook
 
+Original data file: 
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+Original data description:
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 ## Cleaned data fields extracted from the samsung data files
 
 * Old Column Number in Samsung data, Feature Name
@@ -70,7 +78,7 @@
 * 542	fBodyBodyGyroJerkMag-mean()
 * 543	fBodyBodyGyroJerkMag-std()
 
-## Cleaned data file fields
+## Cleaned data file fields - final fields in the cleaned.txt file
 
 * subject - Subject id
 * activities - Activity literal
@@ -144,6 +152,14 @@ Features extracted from the Samsung data
 * fBodyBodyGyroJerkMag-mean()
 * fBodyBodyGyroJerkMag-std()
 
+Subject
+
+Range of subjects between 1 and 30.
+
+Features
+
+See original features_info.txt in the original data source.
+All features fields have values between -1 and 1.
 
 Activities
 
