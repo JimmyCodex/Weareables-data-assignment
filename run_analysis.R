@@ -68,10 +68,10 @@ valid_columns <- function(columns_to_extract, features) {
 
 # Using regex only extract the measurements on the mean and standard deviation
 features.extract <- valid_columns(features.valid, load.file(file.features))
+featurestest <- read.table(file.features)[features.extract,]
 features.extract.literals <- as.character((read.table(file.features)[features.extract,])$V2)
 
-# Add col names for both the numerical and the literal activities columns
-# We are specifically adding a column for each of them
+# Add col names for both the numerical and the literal activities columns.
 features.extract.literals <- c(features.extract.literals, c("activities", "subject"))
 
 activities.labels <- load.file(file.activities.lables)
